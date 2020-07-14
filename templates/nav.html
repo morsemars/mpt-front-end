@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="navigation.css">
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -19,14 +21,92 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Tasks</a></li>
             </ul>
-            
+
         </nav>
 
         <main>
             <header>
-                Dashboard
+                Dashboard > New Project
             </header>
+
+            <section class="widget-container">
+
+                <header>
+                    <h2>Project Status</h2>
+                </header>
+                
+                <div class="status-container">
+                    <div class="status-box">
+                        <h3>Total Hours Spent</h3>
+                        <p>0:00 <span class="unit">hrs</span> </p> 
+                    </div>
+                </div>
+
+                <div class="status-container">
+                    <div class="status-box">
+                        <h3>Completed Tasks</h3>
+                        <p>0 <span class="unit">/ 3</span> </p> 
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="widget-container">
+
+                <header>
+                    <h2>Active Tasks</h2>
+                    <span class="badge">
+                        3
+                    </span>
+                </header>
+
+
+
+                <div class="log">
+                    <div class="image-frame">
+                        <img src="../public/user.png" alt="">
+                    </div>
+                    <span class="task-id">PT-1</span>
+                    <span class="message">This an example of a task description.</span>
+                </div>
+
+                <div class="log">
+                    <div class="image-frame">
+                        <img src="../public/user.png" alt="">
+                    </div>
+                    <span class="task-id">PT-2</span>
+                    <span class="message">Another example of a task description.</span>
+                </div>
+
+
+                <div class="log">
+                    <div class="image-frame">
+                        <img src="../public/user.png" alt="">
+                    </div>
+                    <span class="task-id">PT-3</span>
+                    <span class="message">This a longer description for another task.</span>
+                </div>
+
+
+                <!-- <table class="log">
+                    <thead>
+                        <th class="user"></th>
+                        <th class="project">Project ID</th>
+                        <th class="date">Date</th>
+                        <th class="message">Message</th>
+                    </thead>
+                    <tr>
+                        <td>img </td>
+                        <td>P1</td>
+                        <td>Jul 14, 2020</td>
+                        <td>This is a sample log message</td>
+                    </tr>
+                </table> -->
+
+            </section>
+
         </main>
     </div>
 </body>
+
 </html>
