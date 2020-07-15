@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <header>
+                <h1>Morse</h1>
+            </header>
+
+            <ul class="nav-links">
+                <li><a href="#">Dashboard</a></li>
+                <li class="active"><a href="#">Projects</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <header>
+                Projects
+            </header>
+
+            <section class="project-list">
+
+                <div class="project-box">
+                    <header>
+                        <h3> <a href="./project-details.html">New Project</a> </h3>
+                        <div class="action-buttons">
+                            <button class="dropdown">
+                                <ion-icon name="ellipsis-vertical"></ion-icon>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                    </div>
+                    <footer>
+                        <div class="members">
+                            <div class="image-frame small">
+                                <img src="../public/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="status">
+                            0%
+                        </div>
+                    </footer>
+                </div>
+                <div class="project-box">
+                    <header>
+                        <h3> <a href="./project-details.html">New Project</a> </h3>
+                        <div class="action-buttons">
+                            <button>
+                                <ion-icon name="ellipsis-vertical"></ion-icon>
+                            </button>
+                            
+                        </div>
+                    </header>
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                    </div>
+                    <footer>
+                        <div class="members">
+                            <div class="image-frame small">
+                                <img src="../public/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="status">
+                            0%
+                        </div>
+                    </footer>
+                </div>
+
+                <button class="new">
+                    +
+                </button>
+                
+            </section>
+
+        </main>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <header>
+                <h3>New Project</h3>
+                <div class="action-buttons">
+                    <button><ion-icon name="close"></ion-icon></button>
+                </div>
+                
+            </header>
+            
+            <div class="modal-body">
+                <form class="login-form flex-column">
+
+                    <label for="project-name">Project Name</label>
+                    <input type="text" name="project-name" id="project-name" />
+
+                    <label for="description">Description</label>
+                    <div contenteditable class="form-input"></div>
+
+                    <label for="project-name">Members</label>
+                    <select class="form-input" name="members" id="members">
+                        <option value="Marcelino Madriaga">Marcelino Madriaga</option>
+                        <option value="Marcelino Madriaga">Marcelino Madriaga</option>
+                        <option value="Marcelino Madriaga">Marcelino Madriaga</option>
+                    </select>
+
+                    <div class="center">
+                        <button type="submit">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>
