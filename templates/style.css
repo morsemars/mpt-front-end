@@ -77,6 +77,7 @@ section.widget-container header{
 
 section.widget-container header h2{
     font-size: 18px;
+    font-weight: 400;
 }
  
 section.widget-container header .badge{
@@ -126,6 +127,10 @@ div.log{
     align-items: center;
 }
 
+div.log a{
+    color: #a4c4b6;
+}
+
 .image-frame.small{
     height: 24px;
     width: 24px;
@@ -135,14 +140,6 @@ div.log{
     height: 24px;
 }
 
-div.log span{
-    margin-left: 10px;
-}
-
-div.log span{
-    margin-left: 10px;
-}
-
 div.log span.date{
     font-weight: 300;
     letter-spacing: 1px;
@@ -150,15 +147,11 @@ div.log span.date{
 }
 
 div.log span.hours{
-    position: absolute;
-    right: 0;
+    background: #e2e4e4;
+    padding: 1px 3px;
+    border-radius: 4px;
+    border: 1px solid #0000001a;
 }
-
-div.log span.task-id{
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
 
 /*  Project List */
 .project-list{
@@ -205,14 +198,14 @@ div.log span.task-id{
     right: 10px;
 }
 
-.project-list button, .modal-content header button{
+.project-list button, .modal-content header button, .action-buttons button{
     background: none;
     color: #707774;
     padding: 0;
     margin: 0;
 }
 
-.project-list button:hover{
+.project-list button:hover, , .action-buttons button:hover{
     color: #e2e4e4
 }
 
@@ -305,4 +298,63 @@ cursor: pointer;
 
 .center{
     margin: 0 auto;
+}
+
+/* Task Board */
+
+.task-container{
+    display: inline-flex;
+}
+
+.task-container .board{
+    
+    background: #f6f9f8;
+    border: 1px solid #e2e4e4;
+    width: 360px;
+    border-radius: 4px;
+    max-height: 540px;
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+.task-container .board .header{
+    background: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #e2e4e4;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.task-container .board h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.task-container .board .board-body{
+    padding: 15px;
+}
+
+.task-container .board .board-body .task-box{
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #e2e4e4;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.task-container .board .board-body .task-box h4{
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.task-container .board .board-body .task-box h4 span.subtitle{
+    font-weight: 400;
+}
+
+.task-container .board .board-body .task-box .footer{
+    margin-top: 8px;
+}
+
+.task-container .action-buttons{
+    right: 10px;
 }
